@@ -9,6 +9,7 @@ Options -Indexes
 
 RewriteEngine on
 RewriteRule ^(ip_try/) - [F]
+RewriteBase /zframework/
 
 
 <Files *.pdf>
