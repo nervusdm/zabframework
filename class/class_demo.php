@@ -3,6 +3,7 @@ class demo
 {
 public $view = array('droit'=>array('1','2','3'),'title_h1'=>"Demo",'body'=>'');
 
+
 /*
 Petite methode pour afficher un bref hello world.
 */

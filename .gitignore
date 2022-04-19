@@ -17,4 +17,5 @@
 *.rar
 *.tar
 *.zip
-Thumbs.db 
+Thumbs.db
+.vscode/
