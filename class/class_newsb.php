@@ -83,6 +83,26 @@ $this->view['title_h1']="Création d'une news";
         $this->view['body'] =  dform::load_layout('newsb/newsb-index.php',array('rsql'=>$rsql));
     }
 
+    // Previsiualisation d'une news
+    public function view($id=null,$p=null,$params=null)
+    {
+        $id = (int)$id;
+        $this->view['title_h1']="Prévisialusation de votre news #$id";
+        
+        $rsql = newsm::liste(null,null,array('id'=>$id, 'no_active_only'=>true));
+        if (empty($rsql['0'])) { $this->view['alert_error']="Erreur. News non trouvée ? "; return false ; }
+        
+        $this->view['body'] =  dform::load_layout('newsb/newsb-view.php',array('rsql'=>$rsql));
+
+        $url_projet=url_projet;
+
+        // On peut charger le breadcrumbs avec view['breadcrumbs'] Géré par la classe breadcrumbs et installé dans le layout.php
+        $bread[0] = array('url' => "{$this->url_projetc}/liste/", "text" => "Liste des news");
+        $bread[1] = array('url' => "{$this->url_projetc}/view/$id", "text" => $rsql['0']['news_titre']);
+        $this->view['breadcrumbs'] = $bread;
+
+    }
+
 }
 
 

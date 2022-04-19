@@ -9,7 +9,8 @@ $txt = dform::array_to_table($rsql, array(
     'news_titre' => array('label' => 'Titre'),
     'news_date_debut' => array('label' => 'Date début'),
     'news_date_fin' => array('label' => 'News date fin'),
-    'html1' => array('label' => '', "html" => "<a class='btn btn-xs' href='{$url_projet}/r/newsb/edit/%%news_id%%/'><i class='fa far fa-file-edit'></i></a>")
+    'html1' => array('label' => '', "html" => "<a class='btn btn-xs' href='{$url_projet}/r/newsb/edit/%%news_id%%/'><i class='fa far fa-file-edit'></i></a>"),
+    'html2' => array('label' => '', "html" => "<a class='btn btn-xs' href='{$url_projet}/r/newsb/view/%%news_id%%/'><i class='fa-solid fa-eye'></i></a>")
 ), array('id_table' => 'table_news'));
 
 $txt = <<<HTML
