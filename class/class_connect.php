@@ -98,10 +98,10 @@ LIMIT 0 , 1");
 
     static function droit_insuffisant()
     {
-        dform::redirect(url_projet, array('alert_error' => 'Droit insuffisant !'));
+        dform::redirect(url_projet, array('alert_error' => 'Droit insuffisant !'));        
     }
 
 
 
-    
+
 }
