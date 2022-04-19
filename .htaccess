@@ -1,0 +1,33 @@
+<Files ./Param.php>
+	require valid-user
+</Files>
+
+
+Options +FollowSymlinks
+Options -Indexes
+
+
+RewriteEngine on
+RewriteRule ^(ip_try/) - [F]
+
+
+<Files *.pdf>
+AddDefaultCharset ISO-8859-15
+
+</Files>
+RewriteRule ^r/(.*)/(.*)/(.*)/(.*)  index.php?class=$1&method=$2&param1=$3&param2=$4  [L] 
+
+RewriteRule ^r/(.*)/(.*)/(.*)  index.php?class=$1&method=$2&param1=$3  [L] 
+RewriteRule ^r/(.*)/(.*)  index.php?class=$1&method=$2  [L] 
+
+RewriteRule ^r/(.*)/  index.php?class=$1  [L] 
+
+RewriteRule ^ra/(.*)/(.*)/(.*)  index.php?ajax=true&class=$1&method=$2&param1=$3  [L] 
+
+RewriteRule ^ra/(.*)/(.*)/(.*)/(.*)  index.php?ajax=true&class=$1&method=$2&param1=$3&param2=$4  [L] 
+RewriteRule ^ra/(.*)/(.*)/(.*)  index.php?ajax=true&class=$1&method=$2&param1=$3  [L] 
+
+
+
+
+

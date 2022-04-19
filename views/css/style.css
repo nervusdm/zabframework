@@ -1,0 +1,20 @@
+.loginForm{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+  background: #f3f3f3;
+  box-shadow: 1px 1px 4px #dcdcdc;
+}
+$white: #fcfbfb;
+
+$theme-colors: (
+    "light":      #f5efbc,
+    "dark":       #131033,
+    "primary":    #004a4e,
+    "secondary":  #366e73,
+    "info":       #e83e21,
+    "success":    #009a45,
+    "warning":    #e8c500,
+    "danger":     #ef002c,
+);

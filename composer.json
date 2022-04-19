@@ -1,0 +1,11 @@
+{
+    "name": "root/hexacat",
+    "minimum-stability": "dev",
+    "require": {
+        "phpmailer/phpmailer": "^6.0",
+        "akeneo/api-php-client": "dev-master",
+        "php-http/guzzle6-adapter": "^2.0",
+        "clegginabox/pdf-merger": "dev-master",
+        "http-interop/http-factory-guzzle": "^1.0"
+    }
+}

@@ -1,0 +1,15 @@
+To install this filemanager application you should execute the following steps:
+
+	1- Download the filemanager.rar file to your computer.
+	
+	2- Extract the archieve to your computer and copy the main folder to any place on your web server.
+	
+	3- Configure the following configuration files on the config path 'config':
+	
+		- config/accesscontrol.php
+		- config/useraccesscontrol/<group name>/config.php
+		- config/useraccesscontrol/<group name>/config.file.php
+	
+	To configure these files please read the readme.txt file.
+
+	4- One tip: in php.ini you need to set short_open_tag to On
