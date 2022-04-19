@@ -19,3 +19,4 @@
 *.zip
 Thumbs.db
 .vscode/
+config.php
