@@ -2,10 +2,6 @@
 
 Léger Framework php utilisé entre autres sur les sites :
 
- - hexacat (complètement)
- - hexaplus (très majoritairement) 
- - hexastat (très majoritairement)
-
 
 # Répertoires et fichiers importants
 
