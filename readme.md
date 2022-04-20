@@ -1,6 +1,6 @@
 ﻿# Notice / aperçu du "zframework"
 
-Léger Framework php utilisé entre autres sur les sites :
+Léger Framework php
 
 
 # Répertoires et fichiers importants
