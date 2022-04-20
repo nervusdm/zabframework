@@ -1400,10 +1400,11 @@ if ($bdd=='hexaplus')
 elseif ($bdd=='ext')
 {
     $core = CoreExt::getInstance();
+} 
+elseif ($bdd == 'art' || $bdd == 'hexart') 
+{
+        $core = CoreArt::getInstance();
 }
-
-
-
 else {
 $core = Core::getInstance();
 
